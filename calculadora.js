@@ -1,14 +1,16 @@
+var resultado = document.getElementById('resultado');    
+let caracteres = document.getElementsByClassName('caracter');
+
+class Calculadora{
+    Calculadora(expresion){
+        
+    }
+}
+
 function init(){
-    var resultado = document.getElementById('resultado');
-    var siete = document.getElementById('siete');
-    var ocho = document.getElementById('ocho');
-
-    siete.onclick = function(e){
-        resultado.textContent = resultado.textContent + "7";
+    for (let i = 0; i < caracteres.length; i++) {
+        caracteres[i].addEventListener('click',(e) =>{
+            resultado.value = resultado.value + caracteres[i].textContent;
+        });
     }
-
-    ocho.onclick = function(e){
-        resultado.textContent = resultado.textContent + "8";
-    }
-
 }
