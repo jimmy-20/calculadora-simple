@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi calculadora</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body onload="init()">
+    <main class="calculadora">
+        <div class="container-resultado">
+            <input type="text" id="resultado" class="resultado" placeholder="0">
+        </div>
+        <div class="container-boton">
+            <button>%</button>
+            <button>CE</button>
+            <button>C</button>
+            <button class="caracter" id="division">/</button>
+
+            <button class="caracter">7</button>
+            <button class="caracter">8</button>
+            <button class="caracter">9</button>
+            <button class="caracter" id="multiplicacion">X</button>
+
+            <button class="caracter">4</button>
+            <button class="caracter">5</button>
+            <button class="caracter">6</button>
+            <button class="caracter" id="resta">-</button>
+
+            <button class="caracter">1</button>
+            <button class="caracter">2</button>
+            <button class="caracter">3</button>
+            <button class="caracter" id="suma">+</button>
+
+            <button class="signo_inverso">+/-</button>
+            <button class="caracter">0</button>
+            <button class="caracter">.</button>
+            <button class="igual">=</button>
+        </div>
+    </main>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
